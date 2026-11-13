@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=Outfit:wght@200;300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'IBM Plex Sans Arabic','Plus Jakarta Sans',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#3f001c", "on-error-container": "#93000a", "surface-container-highest": "#e2e2e4", "inverse-on-surface": "#f0f0f2", "on-secondary": "#ffffff", "on-surface-variant": "#444748", "surface-dim": "#d9dadc", "error": "#ba1a1a", "inverse-primary": "#c9c6c5", "tertiary-fixed-dim": "#ffb1c7", "primary-container": "#1c1b1b", "secondary-fixed-dim": "#b4d33b", "secondary": "#536600", "on-primary-fixed": "#1c1b1b", "tertiary-fixed": "#ffd9e2", "on-secondary-fixed": "#171e00", "surface-tint": "#5f5e5e", "on-primary-fixed-variant": "#474646", "surface-container": "#eeeef0", "outline-variant": "#c4c7c7", "on-tertiary-container": "#e54886", "background": "#f9f9fb", "on-primary": "#ffffff", "surface": "#f9f9fb", "on-primary-container": "#858383", "error-container": "#ffdad6", "on-secondary-container": "#576a00", "outline": "#747878", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface": "#1a1c1d", "on-tertiary-fixed": "#3f001c", "surface-bright": "#f9f9fb", "secondary-container": "#cced53", "surface-variant": "#e2e2e4", "tertiary": "#000000", "on-background": "#1a1c1d", "primary": "#000000", "surface-container-high": "#e8e8ea", "on-secondary-fixed-variant": "#3e4c00", "surface-container-low": "#f3f3f5", "on-tertiary": "#ffffff", "primary-fixed-dim": "#c9c6c5", "on-tertiary-fixed-variant": "#8e0048", "secondary-fixed": "#cff056", "primary-fixed": "#e5e2e1", "inverse-surface": "#2f3132" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter": "1.5rem", "margin": "2rem", "space-xl": "3rem", "space-lg": "1.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "display-xl": [ "Outfit" ], "headline-md": [ "Outfit" ], "metric-stat": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg": [ "Outfit" ], "display-xl-mobile": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Outfit" ], "title-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "metric-stat": [ "64px", { "lineHeight": "68px", "letterSpacing": "-0.04em", "fontWeight": "200" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "display-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "title-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-sm"><span class="material-symbols-outlined text-[20px]">cyclone</span></div><div><span class="font-title-lg text-title-lg tracking-tight font-bold text-on-surface block leading-none">AURA</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant block mt-0.5">KINETIC ERP</span></div></div><div class="h-6 w-[1px] bg-surface-container-highest hidden lg:block"></div><button class="hidden lg:flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-all duration-200"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-body-sm text-body-sm font-medium">فرع المعادي · Maadi</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button></div><nav class="hidden xl:flex items-center p-1.5 rounded-full bg-surface-container-low shadow-[inset_0_1px_2px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary text-on-primary shadow-sm"><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="dashboard" href="#">لوحة التحكم</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="members" href="#">الأعضاء</a><a aria-current="page" class="px-space-md py-2 rounded-full font-body-sm transition-all duration-150 bg-primary text-on-primary shadow-sm" data-path="pos-sales" href="#">نقطة البيع</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="classes-schedule" href="#">الحصص والجدول</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="insights-reports" href="#">الرؤى والتقارير</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="launcher-more" href="#">المزيد</a></nav><div class="flex items-center gap-space-sm"><div class="relative hidden md:flex items-center"><div class="flex items-center gap-space-sm px-space-md h-10 w-72 rounded-full bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_rgba(83,102,0,0.25)]"><span class="material-symbols-outlined text-[18px]">search</span><input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm focus:outline-none" placeholder="⌘K بحث بالأعضاء والعمليات..." type="text"/><span class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">⌘K</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md font-medium">الوردية الصباحية · كاش 12,400 ج.م</span></div><button class="relative w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><button class="px-3 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all">EN</button><div class="flex items-center gap-space-sm pl-1 pr-2 py-1 rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:block text-right"><span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">كابتن مصطفى</span><span class="font-label-sm text-label-sm text-on-surface-variant block">مدير الفرع</span></div></div></div></div></header><main class="w-full pt-20 pb-36 min-h-screen bg-surface px-gutter"><div class="flex flex-col w-full">
+<div class="w-full mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary font-bold">Aura Express Checkout · POS Terminal #03</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-light tracking-tight">نقطة البيع والكاشير المباشر</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="px-4 py-2 rounded-full bg-surface-container flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface">الوردية المفتوحة: 08:30 ص</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-label-md text-secondary font-semibold">كاش: 12,400 ج.م</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all text-on-surface" title="تعليق السلة مؤقتاً (F6)">
+<span class="material-symbols-outlined text-[20px]">pause_circle</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all text-on-surface" title="فتح درج النقدية">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-7 flex flex-col gap-5">
+<div class="p-4 rounded-lg bg-surface-container-low shadow-sm flex flex-col md:flex-row gap-3 items-center">
+<div class="relative flex-1 w-full">
+<div class="flex items-center gap-2 px-4 h-12 rounded-full bg-surface-container-lowest shadow-[inset_0_1px_2px_rgba(0,0,0,0.04)] focus-within:shadow-[0_0_0_2px_rgba(83,102,0,0.3)] transition-all">
+<span class="material-symbols-outlined text-secondary text-[22px]">barcode_scanner</span>
+<input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md focus:outline-none" id="pos-search-input" placeholder="امسح الباركود أو ابحث عن صنف أو باقة... (اضغط / للبحث السريع)" type="text"/>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-mono">F2</span>
+</div>
+</div>
+<div class="flex items-center gap-2 w-full md:w-auto justify-end">
+<button class="px-4 h-12 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>تصفية مخصصة</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="category-pill active shrink-0 px-4 py-2 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-medium shadow-sm transition-all" data-category="all">
+          الكل (38)
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all" data-category="subs">
+          الاشتراكات والباقات
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all" data-category="pt">
+          حصص التدريب الخاص PT
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all" data-category="supplements">
+          المكملات الغذائية
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all" data-category="bar">
+          المشروبات والبار الصحي
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all" data-category="lockers">
+          إيجار الخزائن
+        </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3.5" id="product-grid">
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="subs" data-id="p1" data-name="باقة 6 أشهر ذهبية" data-price="3400">
+<div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-secondary-fixed/40 to-transparent rounded-full -mr-8 -mt-8 pointer-events-none blur-xl"></div>
+<div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">باقة مميزة VIP</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">add_shopping_cart</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1 group-hover:text-secondary transition-colors">باقة 6 أشهر ذهبية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mb-3">تشمل فحص InBody شهرياً + دخول غير محدود لكل المناطق</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">متوفر للحجز الفوري</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">3,400</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="subs" data-id="p2" data-name="باقة 3 أشهر فضية" data-price="2000">
+<div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">باقة أساسية</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">add_shopping_cart</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1 group-hover:text-secondary transition-colors">باقة 3 أشهر فضية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mb-3">صالة اللياقة والحديد العامة مع استشارة أولية مجانية</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">اشتراك ربع سنوي</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">2,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="pt" data-id="p3" data-name="حصص تدريب خاص PT (12 حصة)" data-price="1800">
+<div class="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-tertiary-fixed/30 to-transparent rounded-full -ml-6 -mb-6 pointer-events-none blur-lg"></div>
+<div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">كابتن معتمد</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">add_shopping_cart</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1 group-hover:text-secondary transition-colors">حصص تدريب خاص PT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mb-3">حزمة 12 حصة تدريب فردي + خطة تغذية متكاملة</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">صلاحية 45 يوماً</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">1,800</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="supplements" data-id="p4" data-name="بروتين شيك واي جولد" data-price="120">
+<div class="h-28 w-full rounded-md mb-3 bg-surface-container-low overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Premium gold standard whey protein shake bottle standing on a sleek concrete surface in a minimalist luxury fitness club cafe, soft natural morning daylight highlighting condensation, muted aesthetic styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp_a7UACQtJNwoRib-vbVT6C6coNUHIRbcEIG02Ru2SMQmL4z7LWIUT8vZzCIsUjZctiaoT7BqHdvPF1R8Zy4s2ONbm_XEyF87k2q47msOVBfXZK8-KYIkIuyLXyGp4auDRC7vI9XJBgHCho48YhTnMxdKPJF4DH5pU4CCKtpNDxDVjkEmMvuTn2wXDUTgqc0uZ_zey_t8Bs0epnu0sA-mh8XkDJFK9Li-x1cKCMg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-secondary font-bold">متبقي 24</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-0.5 group-hover:text-secondary transition-colors">بروتين شيك واي جولد</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">فانيليا مدغشقر · 32غ بروتين</p>
+</div>
+<div class="pt-2 flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">باركود: #7741</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">120</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="bar" data-id="p5" data-name="ماء معدني 1 لتر" data-price="15">
+<div class="h-28 w-full rounded-md mb-3 bg-surface-container-low overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chilled premium glass bottle of mineral water with micro droplets on surface resting on an architectural stone counter in an airy wellness sanctuary, calm soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_-gGlz_p0XkDm1fEeNJBfoWNJSKASUuZfmspIis6ZUMBfAL7zs-K_cPFKMqGudHrnPIWuSAUhDqeR5nquN126c5L788nmyG1pOqQuwZSS5yfowEV1CXM3ZOPVZwcSG0R4nlt7DaWoOAm9Ls1wMutAJc4xzWtOP2ac66wH6JFSZ_7T2FGw7D5-L5rnq5mWS9wc7b1j-KK8q45JARMtHH1qmZ9JIUvlA5ebpoIBE68"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface font-medium">متوفر بكثرة</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-0.5 group-hover:text-secondary transition-colors">ماء معدني 1 لتر</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">مياه ألكالاين قلوية باردة</p>
+</div>
+<div class="pt-2 flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">البار الرياضي</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">15</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="lockers" data-id="p6" data-name="استئجار خزانة VIP شهرية" data-price="250">
+<div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">خدمات النادي</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">add_shopping_cart</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1 group-hover:text-secondary transition-colors">استئجار خزانة VIP شهرية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mb-3">قفل إلكتروني ذكي مدمج + غسيل منشفة خاص مجاناً</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-medium">متبقي 6 خزائن</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">250</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="supplements" data-id="p7" data-name="كرياتين ميكرونايزد" data-price="650">
+<div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">مكمل أداء</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">add_shopping_cart</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1 group-hover:text-secondary transition-colors">كرياتين ميكرونايزد 300غ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mb-3">نقاء 99.9% مونوهايدريت سريع الامتصاص</p>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">متبقي 11 عبوة</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">650</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div class="product-card group relative p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-200 cursor-pointer flex flex-col justify-between overflow-hidden" data-category="bar" data-id="p8" data-name="مشروب طاقة صحي BCAA" data-price="85">
+<div class="h-28 w-full rounded-md mb-3 bg-surface-container-low overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chilled matte black aluminum can of health energy drink with subtle neon green typographic branding, studio backlighting, fresh lime slice nearby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR7RATFBgfYt0agpPDwgUSj7168BQjnnSs5VC6PJ-OcUn-lIQVovEAPUUykI90JjJ1SKbGP4KRlinpILoWZO8TndCC2_F_cwKkXnHyPtxoSaKxaktzR4KxygVQURHMaG2WAO5iy9koLS235ZX61bQ5CU611BBLhJi5sLYQCBHyDkjBbPRNNoPy6yExOOeLhhGu7IKTzTLwCub4VMLcDGfNLV8ZsN6HNypYuGkWkSs"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-secondary font-bold">بدون سكر</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-0.5 group-hover:text-secondary transition-colors">مشروب طاقة صحي BCAA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">نكهة التفاح الأخضر المنعش</p>
+</div>
+<div class="pt-2 flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">مبرد جاهز</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-light text-on-surface tracking-tight">85</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 sticky top-24">
+<div class="p-6 rounded-lg bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_16px_40px_rgba(0,0,0,0.05)] flex flex-col gap-5">
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">person_check</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">طارق حسام الرفاعي</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">#EG-9421</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">رصيد المحفظة المتاح: <span class="font-semibold text-secondary">150.00 ج.م</span></p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all shrink-0" title="تبديل العميل">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">عناصر السلة (<span id="cart-item-count">2</span>)</span>
+<button class="font-label-sm text-label-sm text-error hover:underline flex items-center gap-1" id="clear-cart-btn">
+<span class="material-symbols-outlined text-[14px]">delete_sweep</span>
+              تفريغ السلة
+            </button>
+</div>
+<div class="flex flex-col gap-2.5 max-h-56 overflow-y-auto pr-0.5 scrollbar-none" id="cart-items-container">
+<div class="cart-row p-3 rounded-lg bg-surface-container-low flex items-center justify-between gap-2" data-item-id="p1">
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface block truncate">باقة 6 أشهر ذهبية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">اشتراك شامل · فحص شهري</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-full p-0.5">
+<button class="btn-qty-minus w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-semibold qty-value">1</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<div class="text-left min-w-[75px]">
+<span class="font-title-md text-title-md font-semibold text-on-surface item-total">3,400</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">ج.م</span>
+</div>
+<button class="btn-remove-item text-on-surface-variant/60 hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<div class="cart-row p-3 rounded-lg bg-surface-container-low flex items-center justify-between gap-2" data-item-id="p4">
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface block truncate">بروتين شيك واي جولد</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">سعر الحبة: 120 ج.م</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-full p-0.5">
+<button class="btn-qty-minus w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-7 text-center font-title-md text-title-md text-on-surface font-semibold qty-value">2</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<div class="text-left min-w-[75px]">
+<span class="font-title-md text-title-md font-semibold text-on-surface item-total">240</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">ج.م</span>
+</div>
+<button class="btn-remove-item text-on-surface-variant/60 hover:text-error transition-colors p-1">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 flex-1">
+<span class="material-symbols-outlined text-[20px] text-secondary">sell</span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">خصم الكابتن 10%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">كوبون مفعّل: CAPTAIN-10</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-secondary bg-secondary-container px-2.5 py-1 rounded-full">-364 ج.م</span>
+<button class="text-on-surface-variant/60 hover:text-error p-1" title="إلغاء الكوبون">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1 border-t border-surface-container">
+<div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+<span>المجموع الفرعي:</span>
+<span>3,640 ج.م</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+<span>الخصم المطبق (10%):</span>
+<span class="text-secondary font-medium">-364 ج.م</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+<span>ضريبة القيمة المضافة (0% خدمات صحية رياضية):</span>
+<span>0.00 ج.م</span>
+</div>
+<div class="flex justify-between items-baseline pt-2">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">الإجمالي النهائي المستحق:</span>
+<div class="flex items-baseline gap-1 text-on-surface">
+<span class="font-metric-stat text-metric-stat tracking-tighter leading-none" id="grand-total-display">3,276</span>
+<span class="font-title-lg text-title-lg font-medium text-on-surface-variant">ج.م</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant block mb-2 font-medium">طريقة الدفع أو تقسيم الحساب:</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="payment-method-pill active flex flex-col items-center justify-center p-3 rounded-lg bg-primary text-on-primary shadow-sm transition-all" data-method="cash">
+<span class="material-symbols-outlined text-[20px] mb-1">payments</span>
+<span class="font-label-md text-label-md font-semibold">كاش نقدي</span>
+</button>
+<button class="payment-method-pill flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" data-method="card">
+<span class="material-symbols-outlined text-[20px] mb-1">credit_card</span>
+<span class="font-label-md text-label-md font-semibold">فيزا / ماستر</span>
+</button>
+<button class="payment-method-pill flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" data-method="instapay">
+<span class="material-symbols-outlined text-[20px] mb-1">account_balance_wallet</span>
+<span class="font-label-md text-label-md font-semibold">إنستاباي InstaPay</span>
+</button>
+</div>
+</div>
+<button class="w-full py-4 rounded-full bg-primary hover:bg-on-surface text-on-primary font-title-md text-title-md font-semibold shadow-xl hover:shadow-2xl flex items-center justify-center gap-2 transition-all group" id="complete-sale-btn">
+<span class="material-symbols-outlined text-[22px] text-secondary-fixed group-hover:rotate-12 transition-transform">task_alt</span>
+<span>إتمام البيع وطباعة الفاتورة (F10)</span>
+</button>
+<div class="flex items-center justify-between gap-3 pt-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>
+              واتساب فوري
+            </span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface">wallet</span>
+              Google Wallet Pass
+            </span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-28 left-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="checkout-notification">
+<div class="px-5 py-3 rounded-full bg-primary text-on-primary shadow-2xl flex items-center gap-3 border border-outline/20">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">verified</span>
+<div>
+<span class="font-body-md text-body-md font-semibold block leading-tight">تم إصدار الفاتورة #INV-9821 بنجاح</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/70">تم إرسال الإيصال المالي وتحديث محفظة العضو</span>
+</div>
+</div>
+</div>
+<script>
+    (function () {
+      const categoryPills = document.querySelectorAll('.category-pill');
+      const productCards = document.querySelectorAll('.product-card');
+      const searchInput = document.getElementById('pos-search-input');
+      const paymentPills = document.querySelectorAll('.payment-method-pill');
+      const completeSaleBtn = document.getElementById('complete-sale-btn');
+      const notification = document.getElementById('checkout-notification');
+
+      categoryPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          categoryPills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+          const category = pill.getAttribute('data-category');
+          productCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const val = e.target.value.toLowerCase().trim();
+          productCards.forEach(card => {
+            const name = card.getAttribute('data-name')?.toLowerCase() || '';
+            const cat = card.getAttribute('data-category')?.toLowerCase() || '';
+            if (name.includes(val) || cat.includes(val)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+
+        window.addEventListener('keydown', (e) => {
+          if (e.key === '/' && document.activeElement !== searchInput) {
+            e.preventDefault();
+            searchInput.focus();
+          }
+          if (e.key === 'F10') {
+            e.preventDefault();
+            completeSaleBtn?.click();
+          }
+        });
+      }
+
+      paymentPills.forEach(btn => {
+        btn.addEventListener('click', () => {
+          paymentPills.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            b.classList.add('bg-surface-container-low', 'text-on-surface');
+          });
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        });
+      });
+
+      document.querySelectorAll('.cart-row').forEach(row => {
+        const minusBtn = row.querySelector('.btn-qty-minus');
+        const plusBtn = row.querySelector('.btn-qty-plus');
+        const qtySpan = row.querySelector('.qty-value');
+        const removeBtn = row.querySelector('.btn-remove-item');
+
+        minusBtn?.addEventListener('click', (e) => {
+          e.stopPropagation();
+          let count = parseInt(qtySpan.textContent, 10);
+          if (count > 1) {
+            qtySpan.textContent = count - 1;
+          } else {
+            row.remove();
+          }
+        });
+
+        plusBtn?.addEventListener('click', (e) => {
+          e.stopPropagation();
+          let count = parseInt(qtySpan.textContent, 10);
+          qtySpan.textContent = count + 1;
+        });
+
+        removeBtn?.addEventListener('click', (e) => {
+          e.stopPropagation();
+          row.remove();
+        });
+      });
+
+      document.getElementById('clear-cart-btn')?.addEventListener('click', () => {
+        const container = document.getElementById('cart-items-container');
+        if (container) container.innerHTML = '<div class="py-8 text-center text-on-surface-variant font-body-sm">السلة فارغة حالياً</div>';
+        const total = document.getElementById('grand-total-display');
+        if (total) total.textContent = '0';
+        const count = document.getElementById('cart-item-count');
+        if (count) count.textContent = '0';
+      });
+
+      completeSaleBtn?.addEventListener('click', () => {
+        if (notification) {
+          notification.classList.remove('translate-y-24', 'opacity-0');
+          notification.classList.add('translate-y-0', 'opacity-100');
+          setTimeout(() => {
+            notification.classList.remove('translate-y-0', 'opacity-100');
+            notification.classList.add('translate-y-24', 'opacity-0');
+          }, 3500);
+        }
+      });
+    })();
+  </script>
+</div></main><aside class="fixed inset-x-0 bottom-0 z-40 bg-tertiary text-on-primary rounded-t-lg shadow-[0_-12px_36px_rgba(0,0,0,0.22)] transition-transform duration-300"><div class="w-full flex justify-center py-2 cursor-pointer"><div class="w-14 h-1 rounded-full bg-outline/40"></div></div><div class="w-full px-gutter pb-4 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-primary-container text-secondary-fixed-dim"><span class="material-symbols-outlined text-[16px]">bolt</span><span class="font-label-md text-label-md uppercase tracking-wider">Aura Live Feed</span></div><span class="font-body-sm text-body-sm text-inverse-on-surface/80 truncate">آخر فحص دخول: أحمد سليم (VIP Performance) · صالة الحديد العامة قبل دقيقتين</span></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-2 text-inverse-on-surface/70 font-label-md text-label-md pl-4 border-l border-on-surface-variant/30"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">group</span><span>إشغال النادي: 68%</span></div><div class="flex items-center gap-space-xs"><button class="px-space-md py-1.5 rounded-full bg-primary-container hover:bg-surface-tint/20 text-on-primary font-body-sm text-body-sm transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">qr_code_scanner</span><span>تسجيل دخول سريع</span></button><button class="px-space-md py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-title-md text-title-md font-semibold transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">add_circle</span><span>اشتراك جديد</span></button></div></div></div></aside></body></html>

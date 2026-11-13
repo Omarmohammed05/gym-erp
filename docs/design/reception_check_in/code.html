@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=Outfit:wght@200;300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'IBM Plex Sans Arabic','Plus Jakarta Sans',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#3f001c", "on-error-container": "#93000a", "surface-container-highest": "#e2e2e4", "inverse-on-surface": "#f0f0f2", "on-secondary": "#ffffff", "on-surface-variant": "#444748", "surface-dim": "#d9dadc", "error": "#ba1a1a", "inverse-primary": "#c9c6c5", "tertiary-fixed-dim": "#ffb1c7", "primary-container": "#1c1b1b", "secondary-fixed-dim": "#b4d33b", "secondary": "#536600", "on-primary-fixed": "#1c1b1b", "tertiary-fixed": "#ffd9e2", "on-secondary-fixed": "#171e00", "surface-tint": "#5f5e5e", "on-primary-fixed-variant": "#474646", "surface-container": "#eeeef0", "outline-variant": "#c4c7c7", "on-tertiary-container": "#e54886", "background": "#f9f9fb", "on-primary": "#ffffff", "surface": "#f9f9fb", "on-primary-container": "#858383", "error-container": "#ffdad6", "on-secondary-container": "#576a00", "outline": "#747878", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface": "#1a1c1d", "on-tertiary-fixed": "#3f001c", "surface-bright": "#f9f9fb", "secondary-container": "#cced53", "surface-variant": "#e2e2e4", "tertiary": "#000000", "on-background": "#1a1c1d", "primary": "#000000", "surface-container-high": "#e8e8ea", "on-secondary-fixed-variant": "#3e4c00", "surface-container-low": "#f3f3f5", "on-tertiary": "#ffffff", "primary-fixed-dim": "#c9c6c5", "on-tertiary-fixed-variant": "#8e0048", "secondary-fixed": "#cff056", "primary-fixed": "#e5e2e1", "inverse-surface": "#2f3132" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter": "1.5rem", "margin": "2rem", "space-xl": "3rem", "space-lg": "1.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "display-xl": [ "Outfit" ], "headline-md": [ "Outfit" ], "metric-stat": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg": [ "Outfit" ], "display-xl-mobile": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Outfit" ], "title-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "metric-stat": [ "64px", { "lineHeight": "68px", "letterSpacing": "-0.04em", "fontWeight": "200" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "display-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "title-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-sm"><span class="material-symbols-outlined text-[20px]">cyclone</span></div><div><span class="font-title-lg text-title-lg tracking-tight font-bold text-on-surface block leading-none">AURA</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant block mt-0.5">KINETIC ERP</span></div></div><div class="h-6 w-[1px] bg-surface-container-highest hidden lg:block"></div><button class="hidden lg:flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-all duration-200"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-body-sm text-body-sm font-medium">فرع المعادي · Maadi</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button></div><nav class="hidden xl:flex items-center p-1.5 rounded-full bg-surface-container-low shadow-[inset_0_1px_2px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary text-on-primary shadow-sm"><a aria-current="page" class="px-space-md py-2 rounded-full font-body-sm transition-all duration-150 bg-primary text-on-primary shadow-sm" data-path="dashboard" href="#">لوحة التحكم</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="members" href="#">الأعضاء</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="pos-sales" href="#">نقطة البيع</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="classes-schedule" href="#">الحصص والجدول</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="insights-reports" href="#">الرؤى والتقارير</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="launcher-more" href="#">المزيد</a></nav><div class="flex items-center gap-space-sm"><div class="relative hidden md:flex items-center"><div class="flex items-center gap-space-sm px-space-md h-10 w-72 rounded-full bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_rgba(83,102,0,0.25)]"><span class="material-symbols-outlined text-[18px]">search</span><input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm focus:outline-none" placeholder="⌘K بحث بالأعضاء والعمليات..." type="text"/><span class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">⌘K</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md font-medium">الوردية الصباحية · كاش 12,400 ج.م</span></div><button class="relative w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><button class="px-3 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all">EN</button><div class="flex items-center gap-space-sm pl-1 pr-2 py-1 rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:block text-right"><span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">كابتن مصطفى</span><span class="font-label-sm text-label-sm text-on-surface-variant block">مدير الفرع</span></div></div></div></div></header><main class="w-full pt-20 pb-36 min-h-screen bg-surface px-gutter"><div class="flex flex-col w-full gap-gutter">
+<!-- Top Command & Instant Query Bar -->
+<section class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md bg-surface-container-lowest/80 backdrop-blur-2xl p-space-lg rounded-xl shadow-[0_12px_36px_-8px_rgba(0,0,0,0.04)]">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[24px]">passkey</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">تسجيل الدخول والاستقبال</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2 py-0.5 rounded-full bg-surface-container-high tracking-normal">VERIFY v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">التحقق اللحظي عبر مسح الباركود، بصمة الوجه والبطاقات الذكية</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs sm:mr-4">
+<div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md">312 متدرب اليوم</span>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">sensors</span>
+<span class="font-label-md text-label-md">بوابة 1 نشطة (Turnstile Online)</span>
+</div>
+</div>
+</div>
+<!-- Quick Search Pill Input -->
+<div class="relative w-full lg:w-96">
+<div class="flex items-center gap-space-sm px-space-md h-12 rounded-full bg-surface-container-low text-on-surface focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_rgba(83,102,0,0.35)] transition-all">
+<span class="material-symbols-outlined text-[20px] text-secondary">qr_code_scanner</span>
+<input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm focus:outline-none" id="manualSearchInput" placeholder="ابحث بالاسم، الهاتف أو الكود (مثال: EG-8841 أو 010...)" type="text"/>
+<button class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:bg-surface-tint transition-colors">
+          فحص
+        </button>
+</div>
+</div>
+</section>
+<!-- Central Verification Stage -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- Optical Scanner & Camera Frame (4 Cols on xl) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-primary-container text-inverse-on-surface shadow-xl flex flex-col justify-between p-space-md">
+<!-- Background Camera Feed Placeholder -->
+<div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity scale-105" data-alt="Monochrome camera feed of high-tech fitness studio gate turnstile entrance with soft ambient lighting and digital biometric scanner view in Cairo boutique gym" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAu4tJe4O4g0H4WrP7S6rtKr-Knj8GDjzOvg7WsQ9junh2l8gkc6X6KORl5toiHnIk3ain-wiPEG4JITBWtTyGze94ANDQXmUYesOUgS5Mji21VD-OFMO_xQaGz8xgRTss85NhtdALQtVHn4cUIC2m37b02re_opEpD-mYiMcVhjI61BVFMehp1Wc37EhoniSU6O7BpqHH5aZ7ldQykGorILW5cMJ6fabXVoLaqf-I')"></div>
+<!-- Laser Scanning Line Effect -->
+<div class="absolute inset-x-0 h-[2px] bg-secondary-fixed shadow-[0_0_12px_#cff056] animate-[scan_2.8s_ease-in-out_infinite]"></div>
+<!-- Top Camera Meta Bar -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">LIVE FEED · 60 FPS</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-secondary-fixed">
+<span class="material-symbols-outlined text-[15px]">center_focus_strong</span>
+<span class="font-label-sm text-label-sm">AUTO-LOCK</span>
+</div>
+</div>
+<!-- Optical Target Reticle -->
+<div class="relative z-10 flex items-center justify-center my-auto">
+<div class="relative w-44 h-44 rounded-lg flex items-center justify-center">
+<div class="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-secondary-fixed rounded-tr-md"></div>
+<div class="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-secondary-fixed rounded-tl-md"></div>
+<div class="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-secondary-fixed rounded-br-md"></div>
+<div class="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-secondary-fixed rounded-bl-md"></div>
+<span class="material-symbols-outlined text-[48px] text-secondary-fixed/50 animate-pulse">barcode_scanner</span>
+</div>
+</div>
+<!-- Bottom Hardware Source Switcher -->
+<div class="relative z-10 flex items-center justify-between gap-space-xs p-1 rounded-full bg-primary/85 backdrop-blur-xl">
+<button class="flex-1 py-1 px-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">videocam</span>
+<span>كاميرا 4K نشطة</span>
+</button>
+<button class="flex-1 py-1 px-2 rounded-full text-inverse-on-surface/70 hover:text-inverse-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">usb</span>
+<span>قارئ باركود USB</span>
+</button>
+</div>
+</div>
+<!-- Quick Reader Diagnostic -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">memory</span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">وحدة التحكم الذكية G-Gate</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">زمن الاستجابة: 0.28 ثانية · منفذ LAN 01</span>
+</div>
+</div>
+<span class="w-3 h-3 rounded-full bg-secondary shadow-[0_0_8px_rgba(83,102,0,0.5)]"></span>
+</div>
+</div>
+<!-- Giant Frosted Verification Hero (8 Cols on xl) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<div class="relative p-space-lg md:p-space-xl rounded-xl bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.06)] overflow-hidden">
+<!-- Subtle Ambient Kinetic Glow In Corner -->
+<div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+<!-- Verification Banner (State: Clear Access) -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<span class="font-title-lg text-title-lg font-bold text-on-surface block leading-tight">مسموح بالدخول — Turnstile Unlocked</span>
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">استجابة سريعة: 0.28 ثانية · تحقق ناجح</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-md text-label-md text-on-surface-variant">التحقق بالبوابة #1</span>
+</div>
+</div>
+<!-- Member Profile Cluster -->
+<div class="pt-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shadow-md" data-alt="Clean corporate headshot portrait of Egyptian male fitness athlete in black sports shirt smiling confidently against a warm minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBybd0tLMSCIU9qmam1qW2urjHUiEmHABbUekdB1qQtRMLQ0iqudqduzPEJwLBjfWxSgfQp13iEFcAXoKXs8N3OafUJrq22BJEhM8PL6QkWmlsXETgGeU0u_8Of_nK-qifZEsAyAGI3zSumdYXD-NAWyMCFea8I2-GU4YIJO8ebzQYp8v73fEzINtUY8QRbJB8n555fSvziwBM9ag-E8roAmu--cRaQ3q8B-lcbaig"/>
+<span class="absolute bottom-0 left-0 w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md font-semibold text-on-surface">أحمد محمود إسماعيل</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">VIP</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">كود العضوية: <span class="font-semibold text-on-surface tracking-wider">#EG-8841</span> · هاتف: 01029482910</p>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container">
+<span class="material-symbols-outlined text-[15px]">workspace_premium</span>
+<span class="font-label-md text-label-md font-bold">Gold Tier — اشتراك ذهبي نصف سنوي</span>
+</div>
+</div>
+</div>
+<!-- Smart Locker Chip -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center gap-space-md w-full md:w-auto">
+<div class="w-12 h-12 rounded-full bg-primary text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">الخزانة المخصصة</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface block leading-tight">#104</span>
+<span class="font-label-sm text-label-sm text-secondary">تم الفتح آلياً عبر RFID</span>
+</div>
+</div>
+</div>
+<!-- Telemetry & Quota Gauges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-lg">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">صلاحية الباقة</span>
+<span class="font-title-lg text-title-lg font-bold text-on-surface mt-1">15 سبتمبر 2025</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">متبقي 142 يوماً</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">الزيارات المتبقية</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface leading-none">28</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 50 زيارة</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 56%"></div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">حالة المدفوعات</span>
+<span class="font-title-lg text-title-lg font-bold text-on-surface mt-1">مسدد بالكامل</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">رصيد المتجر: 450 ج.م</span>
+</div>
+</div>
+<!-- Fast Operator Actions Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-lg">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-md py-2.5 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-semibold hover:bg-surface-tint transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+<span>فتح البوابة يدوياً (F2)</span>
+</button>
+<button class="px-space-md py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-body-sm text-body-sm font-semibold hover:bg-secondary-fixed-dim transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>تجديد مبكر</span>
+</button>
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-body-sm text-body-sm transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">account_box</span>
+<span>الملف الكامل</span>
+</button>
+</div>
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-error hover:bg-error-container/40 font-body-sm text-body-sm transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>إلغاء التسجيل</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Exceptions & Attention Banners (Amber & Red alerts) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Amber Alert: Expiry warning & balance due -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm font-bold text-on-surface">منى السيد</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-3012</span>
+<span class="px-2 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">ينتهي بعد يومين</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">باقة يوغا وبيلاتس · مستحق قسط أخير: <strong class="text-on-surface font-semibold">300 ج.م</strong></p>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-semibold hover:bg-surface-tint whitespace-nowrap transition-all shadow-sm">
+        سداد وتجديد
+      </button>
+</div>
+<!-- Red Alert: Expired Access Blocked -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm font-bold text-on-surface">عمر خليل</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-1102</span>
+<span class="px-2 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">عضوية منتهية</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تم حجب البوابة تلقائياً · آخر اشتراك انتهى منذ 12 يوماً</p>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-body-sm text-body-sm font-semibold hover:bg-secondary-fixed-dim whitespace-nowrap transition-all shadow-sm">
+        تجديد الباقة
+      </button>
+</div>
+</section>
+<!-- Live Feed: Last 10 Member Check-ins -->
+<section class="bg-surface-container-lowest/80 backdrop-blur-xl p-space-lg rounded-xl shadow-[0_12px_36px_-8px_rgba(0,0,0,0.03)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">history</span>
+<span class="font-title-lg text-title-lg font-bold text-on-surface">سجل الحضور الحي (آخر 10 عمليات تحقق)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>محدّث لحظياً</span>
+</div>
+</div>
+<!-- Check-ins Flow List -->
+<div class="overflow-x-auto">
+<div class="min-w-[760px] flex flex-col gap-space-xs">
+<!-- Row 1 (Just checked in) -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Passport size smiling portrait photo of young athletic Egyptian gym member with short dark hair in front of neutral light studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8oEhlv8IWxF0GOSmSEHvasTxXlk4jbcLhFd-wjR9-17RZO42AK_zFUMMeQFGwDmR0mONPO6egqlVle15JyFGnSlqDkL_KsQEEXau3uIt7d0mQ7xdnx0oK5RFjYGZ2Xg6jSwXNKiY-k6XJ6kPxLtZmh6yZT6GjRa2QLcL5noODmqBwLq6rUdZNyuooHO8YQGItRjVT8PutT3Zz7ukYtU20U2S2cv_cp_LzePDu6jg"/>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">أحمد محمود إسماعيل</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-8841</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">Gold Tier نصف سنوي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خزانة #104</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 1 (Turnstile)</div>
+<div class="w-24 text-left font-label-md text-label-md text-secondary font-semibold">منذ ثوانٍ</div>
+</div>
+<!-- Row 2 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-sm">
+              س.م
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">سارة محمد المهدي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-4491</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">Diamond Unlimited</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خزانة #088</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 2 (Ladies)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ دقيقة</div>
+</div>
+<!-- Row 3 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-sm">
+              ط.ع
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">طارق عبد العزيز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-6610</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">CrossFit Pro Session</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">حصة 18:00</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 1 (Main)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 3 دقائق</div>
+</div>
+<!-- Row 4 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center font-bold text-sm">
+              ع.خ
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">عمر خليل</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-1102</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-error block">عضوية منتهية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">لم تخصص خزانة</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md font-semibold text-error">مرفوض الدخول</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 1 (Main)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 4 دقائق</div>
+</div>
+<!-- Row 5 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-sm">
+              ي.ن
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">يوسف نور الدين</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-9021</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">Silver Gym Monthly</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خزانة #019</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 1 (Main)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 7 دقائق</div>
+</div>
+<!-- Row 6 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-sm">
+              م.س
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">منى السيد</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-3012</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">Yoga &amp; Pilates Pass</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">تنبيه تجديد</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 2 (Ladies)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 9 دقائق</div>
+</div>
+<!-- Row 7 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-sm">
+              ك.ج
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">كريم جلال الدين</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-7732</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">Olympic Weightlifting</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خزانة #211</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 1 (Main)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 11 دقيقة</div>
+</div>
+<!-- Row 8 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-sm">
+              ن.ع
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">ندى عصام</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-5509</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">Spinning &amp; Cardio 10x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خزانة #045</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 2 (Ladies)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 14 دقيقة</div>
+</div>
+<!-- Row 9 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-sm">
+              ح.ر
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">حازم رياض</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-1823</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">Gold Tier نصف سنوي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خزانة #102</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 1 (Main)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 17 دقيقة</div>
+</div>
+<!-- Row 10 -->
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm w-64">
+<div class="w-10 h-10 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-sm">
+              م.ع
+            </div>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">ماجد عبد الرحمن</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EG-3420</span>
+</div>
+</div>
+<div class="w-48">
+<span class="font-body-sm text-body-sm text-on-surface block">VIP Recovery Sanctuary</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خزانة VIP #04</span>
+</div>
+<div class="w-36 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">دخول مصرح</span>
+</div>
+<div class="w-28 font-body-sm text-body-sm text-on-surface-variant">بوابة 1 (Main)</div>
+<div class="w-24 text-left font-body-sm text-body-sm text-on-surface-variant">منذ 21 دقيقة</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Keyboard Shortcuts Bar for Front Desk Receptionists -->
+<footer class="flex flex-wrap items-center justify-between gap-space-sm py-2 px-space-md rounded-full bg-surface-container-low text-on-surface-variant text-label-md font-label-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold shadow-sm">F2</kbd>
+<span>فتح يدوي</span>
+</div>
+<div class="flex items-center gap-1">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold shadow-sm">F3</kbd>
+<span>تجديد سريع</span>
+</div>
+<div class="flex items-center gap-1">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold shadow-sm">Space</kbd>
+<span>إعادة تركيز الماسح</span>
+</div>
+<div class="flex items-center gap-1">
+<kbd class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold shadow-sm">Esc</kbd>
+<span>إخلاء الشاشة</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>التزامن مع قاعدة البيانات سحابياً: متصل بنسبة 100%</span>
+</div>
+</footer>
+</div>
+<script>
+  // High-Speed Reception Keyboard Listeners
+  window.addEventListener('keydown', function(e) {
+    if (e.key === 'F2') {
+      e.preventDefault();
+      alert('تم إرسال إشارة فتح البوابة يدويًا إلى Turnstile Gate 1');
+    }
+    if (e.key === 'Escape') {
+      const searchBox = document.getElementById('manualSearchInput');
+      if (searchBox) {
+        searchBox.value = '';
+        searchBox.blur();
+      }
+    }
+  });
+</script></main><aside class="fixed inset-x-0 bottom-0 z-40 bg-tertiary text-on-primary rounded-t-lg shadow-[0_-12px_36px_rgba(0,0,0,0.22)] transition-transform duration-300"><div class="w-full flex justify-center py-2 cursor-pointer"><div class="w-14 h-1 rounded-full bg-outline/40"></div></div><div class="w-full px-gutter pb-4 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-primary-container text-secondary-fixed-dim"><span class="material-symbols-outlined text-[16px]">bolt</span><span class="font-label-md text-label-md uppercase tracking-wider">Aura Live Feed</span></div><span class="font-body-sm text-body-sm text-inverse-on-surface/80 truncate">آخر فحص دخول: أحمد سليم (VIP Performance) · صالة الحديد العامة قبل دقيقتين</span></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-2 text-inverse-on-surface/70 font-label-md text-label-md pl-4 border-l border-on-surface-variant/30"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">group</span><span>إشغال النادي: 68%</span></div><div class="flex items-center gap-space-xs"><button class="px-space-md py-1.5 rounded-full bg-primary-container hover:bg-surface-tint/20 text-on-primary font-body-sm text-body-sm transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">qr_code_scanner</span><span>تسجيل دخول سريع</span></button><button class="px-space-md py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-title-md text-title-md font-semibold transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">add_circle</span><span>اشتراك جديد</span></button></div></div></div></aside></body></html>

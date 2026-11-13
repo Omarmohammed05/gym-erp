@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=Outfit:wght@200;300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'IBM Plex Sans Arabic','Plus Jakarta Sans',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#3f001c", "on-error-container": "#93000a", "surface-container-highest": "#e2e2e4", "inverse-on-surface": "#f0f0f2", "on-secondary": "#ffffff", "on-surface-variant": "#444748", "surface-dim": "#d9dadc", "error": "#ba1a1a", "inverse-primary": "#c9c6c5", "tertiary-fixed-dim": "#ffb1c7", "primary-container": "#1c1b1b", "secondary-fixed-dim": "#b4d33b", "secondary": "#536600", "on-primary-fixed": "#1c1b1b", "tertiary-fixed": "#ffd9e2", "on-secondary-fixed": "#171e00", "surface-tint": "#5f5e5e", "on-primary-fixed-variant": "#474646", "surface-container": "#eeeef0", "outline-variant": "#c4c7c7", "on-tertiary-container": "#e54886", "background": "#f9f9fb", "on-primary": "#ffffff", "surface": "#f9f9fb", "on-primary-container": "#858383", "error-container": "#ffdad6", "on-secondary-container": "#576a00", "outline": "#747878", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface": "#1a1c1d", "on-tertiary-fixed": "#3f001c", "surface-bright": "#f9f9fb", "secondary-container": "#cced53", "surface-variant": "#e2e2e4", "tertiary": "#000000", "on-background": "#1a1c1d", "primary": "#000000", "surface-container-high": "#e8e8ea", "on-secondary-fixed-variant": "#3e4c00", "surface-container-low": "#f3f3f5", "on-tertiary": "#ffffff", "primary-fixed-dim": "#c9c6c5", "on-tertiary-fixed-variant": "#8e0048", "secondary-fixed": "#cff056", "primary-fixed": "#e5e2e1", "inverse-surface": "#2f3132" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter": "1.5rem", "margin": "2rem", "space-xl": "3rem", "space-lg": "1.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "display-xl": [ "Outfit" ], "headline-md": [ "Outfit" ], "metric-stat": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg": [ "Outfit" ], "display-xl-mobile": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Outfit" ], "title-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "metric-stat": [ "64px", { "lineHeight": "68px", "letterSpacing": "-0.04em", "fontWeight": "200" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "display-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "title-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-sm"><span class="material-symbols-outlined text-[20px]">cyclone</span></div><div><span class="font-title-lg text-title-lg tracking-tight font-bold text-on-surface block leading-none">AURA</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant block mt-0.5">KINETIC ERP</span></div></div><div class="h-6 w-[1px] bg-surface-container-highest hidden lg:block"></div><button class="hidden lg:flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-all duration-200"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-body-sm text-body-sm font-medium">فرع المعادي · Maadi</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button></div><nav class="hidden xl:flex items-center p-1.5 rounded-full bg-surface-container-low shadow-[inset_0_1px_2px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary text-on-primary shadow-sm"><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="dashboard" href="#">لوحة التحكم</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="members" href="#">الأعضاء</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="pos-sales" href="#">نقطة البيع</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="classes-schedule" href="#">الحصص والجدول</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="insights-reports" href="#">الرؤى والتقارير</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="launcher-more" href="#">المزيد</a></nav><div class="flex items-center gap-space-sm"><div class="relative hidden md:flex items-center"><div class="flex items-center gap-space-sm px-space-md h-10 w-72 rounded-full bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_rgba(83,102,0,0.25)]"><span class="material-symbols-outlined text-[18px]">search</span><input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm focus:outline-none" placeholder="⌘K بحث بالأعضاء والعمليات..." type="text"/><span class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">⌘K</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md font-medium">الوردية الصباحية · كاش 12,400 ج.م</span></div><button class="relative w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><button class="px-3 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all">EN</button><div class="flex items-center gap-space-sm pl-1 pr-2 py-1 rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:block text-right"><span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">كابتن مصطفى</span><span class="font-label-sm text-label-sm text-on-surface-variant block">مدير الفرع</span></div></div></div></div></header><main class="w-full pt-20 pb-36 min-h-screen bg-surface px-gutter"><div class="flex flex-col w-full">
+<div class="w-full flex flex-col gap-gutter">
+<!-- Header Block with Glass Vitrine & Live Cloud Sync Status -->
+<div class="w-full rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-margin shadow-sm relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-secondary-fixed-dim/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col 2xl:flex-row 2xl:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Google Wallet API v1: متصل بنجاح · شهادات التشفير نشطة
+            </span>
+<span class="inline-flex items-center gap-1 px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">sync_saved_locally</span>
+              OTA Instant Sync Active
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-on-surface font-semibold mt-1">
+            استوديو بطاقات المحفظة الرقمية — Google Wallet Pass Studio
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            تخصيص الهوية البصرية، ربط الحقول المشفرة، وإطلاق تدفقات التزامن التلقائي عبر بوابات العبور الذكية وسحابة Google Cloud Console.
+          </p>
+</div>
+<!-- Top Quick Controls & Actions -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="px-space-lg py-3 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-title-md text-title-md transition-all flex items-center gap-2 shadow-sm active:scale-95" id="send-test-btn">
+<span class="material-symbols-outlined text-[18px]">phonelink_ring</span>
+<span>إرسال عينة تجريبية للهاتف</span>
+</button>
+<button class="px-space-xl py-3 rounded-full bg-primary hover:bg-neutral-800 text-on-primary font-title-md text-title-md font-medium transition-all flex items-center gap-2 shadow-md active:scale-95" id="save-sync-btn">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">cloud_sync</span>
+<span>حفظ القالب والتزامن الفوري</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Studio Architecture: 12-Column Responsive Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT/CENTER COLUMN: Controls, Customizers & Automations (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-gutter">
+<!-- CARD 1: Identity & Visual Canvas -->
+<div class="w-full rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-margin shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold leading-none">الهوية البصرية وشريط التدرج</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Visual Identity &amp; Color Calibration</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">RGB / sRGB Accurate</span>
+</div>
+<!-- Color Presets Palette -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-body-sm text-body-sm font-medium text-on-surface flex items-center justify-between">
+<span>درجة لون بطاقة المحفظة الأساسية</span>
+<span class="font-label-md text-label-md text-secondary" id="selected-theme-label">Aura Lime &amp; Onyx (افتراضي)</span>
+</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<!-- Preset 1 (Active) -->
+<button class="theme-preset-btn p-3 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container flex items-center gap-space-sm transition-all text-right shadow-sm ring-2 ring-secondary" data-theme="lime">
+<span class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Lime Obsidian</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">رياضي فاخر</span>
+</div>
+</button>
+<!-- Preset 2 -->
+<button class="theme-preset-btn p-3 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container flex items-center gap-space-sm transition-all text-right shadow-sm" data-theme="emerald">
+<span class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-inner"></span>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Deep Emerald</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">سبا واستشفاء</span>
+</div>
+</button>
+<!-- Preset 3 -->
+<button class="theme-preset-btn p-3 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container flex items-center gap-space-sm transition-all text-right shadow-sm" data-theme="pink">
+<span class="w-7 h-7 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container shadow-inner"></span>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Kinetic Pink</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">أداء نسائي VIP</span>
+</div>
+</button>
+<!-- Preset 4 -->
+<button class="theme-preset-btn p-3 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container flex items-center gap-space-sm transition-all text-right shadow-sm" data-theme="onyx">
+<span class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface shadow-inner"></span>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Minimal Silver</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">هادئ هندسي</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Logo & Hero Image Uploader Modules -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+<!-- Emblem Upload -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex flex-col gap-space-sm">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">أيقونة الشارة الدائرية (Brand Icon)</span>
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[28px]">cyclone</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-all">
+                      استبدال الشعار
+                    </button>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-error hover:bg-error-container/40 transition-all">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PNG شفاف · 660×660px</span>
+</div>
+</div>
+</div>
+<!-- Card Hero Mesh Artwork -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex flex-col gap-space-sm">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">خلفية الهيرو للبطاقة (Hero Visual Banner)</span>
+<div class="flex items-center gap-space-md">
+<img class="w-14 h-14 rounded-DEFAULT object-cover shadow-sm" data-alt="High performance luxury boutique gym interior illuminated by subtle neon lime and soft natural light, minimalist athletic aesthetic, sleek equipment, high resolution, soft focus studio photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV7FnzXncuF-_Hh4Dke0Asy4V9BdQTuR61cWerN_Irw61P743tw8VbhjkNKNuUVE_I4IQPCiZLAK5gQPHZf2dCaJ5LDE-nrge_-b0eHbk6ytmQhEYaTIyYuLP-BwBnuxz440j0IZXZvYBJMs-Za-yqK1FqgmnPbip0HMW-xiN5s2kMpn9LgUgt-ulq0Q1_tFNRCVGrZ_-rvp_gD6H7ge3ZonXidSLJSkPm5ogPsUE"/>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-all">
+                      رفع عمل فني جديد
+                    </button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1032×336px · WebP أو JPEG عالي الدقة</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2: Dynamic Field Mapping & Display Attributes -->
+<div class="w-full rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-margin shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold leading-none">تخصيص الحقول المتغيرة</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Dynamic Pass Payload &amp; Metadata</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-medium">6 حقول مربوطة</span>
+</div>
+<!-- Dynamic Toggles Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Field 1 -->
+<label class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">person_check</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">اسم العضو ورقم العضوية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">معرف العضو المشفر (Hex ID)</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded-sm accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<!-- Field 2 -->
+<label class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">workspace_premium</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">باقة العضوية والدرجة VIP</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">شريط التميز الذهبي / الفضي</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded-sm accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<!-- Field 3 -->
+<label class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">event_available</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">تاريخ الانتهاء مع التنبيه المسبق</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تذكير تلقائي قبل 7 أيام</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded-sm accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<!-- Field 4 -->
+<label class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">fitness_center</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">رصيد الزيارات المتبقية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تناقص لحظي عند مسح البوابة</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded-sm accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<!-- Field 5 -->
+<label class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">location_city</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">اسم الفرع المعتمد</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">المعادي، التجمع، الشيخ زايد</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded-sm accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<!-- Field 6 -->
+<label class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">qr_code_2</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">باركود الدخول الذكي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">رمز Aztec / QR مشفر متجدد</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded-sm accent-primary cursor-pointer" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- CARD 3: Instant Automations & Turnstile Triggering -->
+<div class="w-full rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-margin shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold leading-none">قواعد الأتمتة والمزامنة الفورية</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Cloud Triggers &amp; Webhook Signals</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-medium">سحابي حي</span>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface mt-0.5">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+</div>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">إرسال رابط البطاقة تلقائياً عبر واتساب ورسائل SMS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">يتم التوليد فور سداد الاشتراك بنقطة البيع POS أو عبر البوابة الإلكترونية</span>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface rtl:peer-checked:after:-translate-x-full peer-checked:bg-secondary after:content-[''] after:absolute after:top-[2px] after:right-[2px] rtl:after:right-auto rtl:after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</div>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface mt-0.5">
+<span class="material-symbols-outlined text-[18px]">sensors</span>
+</div>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">تحديث رصيد الزيارات لحظياً فور المرور من البوابة Turnstile</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">استجابة سريعة بزمن مزامنة يقل عن 300 ملي ثانية عبر WebSocket</span>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface rtl:peer-checked:after:-translate-x-full peer-checked:bg-secondary after:content-[''] after:absolute after:top-[2px] after:right-[2px] rtl:after:right-auto rtl:after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</div>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/70 flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface mt-0.5">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</div>
+<div>
+<span class="font-body-md text-body-md font-semibold text-on-surface block">إشعار القرب الجغرافي الذكي (Geofencing Alert)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ظهور البطاقة مباشرة على شاشة قفل هاتف العضو عند الاقتراب من الفرع بنطاق 150 متر</span>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface rtl:peer-checked:after:-translate-x-full peer-checked:bg-secondary after:content-[''] after:absolute after:top-[2px] after:right-[2px] rtl:after:right-auto rtl:after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Smartphone Mockup with Realtime Pass Preview & Metrics (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- Interactive Preview Container with Organic Ambient Lighting Glow -->
+<div class="w-full rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-margin shadow-sm flex flex-col items-center relative overflow-hidden">
+<!-- Back-glow Radial Gradient Element -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-[80px] pointer-events-none"></div>
+<!-- Section Label -->
+<div class="w-full flex items-center justify-between mb-space-lg relative z-10">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-title-md text-title-md font-bold text-on-surface">معاينة حية على الهاتف المحمول</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Google Wallet Android 14+</span>
+</div>
+</div>
+<!-- Smartphone Shell Canvas -->
+<div class="relative z-10 w-[310px] sm:w-[340px] rounded-[48px] bg-primary p-3 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
+<!-- Screen Notch / Dynamic Island -->
+<div class="w-full h-5 flex justify-center items-center mb-1">
+<div class="w-20 h-4 rounded-full bg-primary-container flex items-center justify-end px-2">
+<span class="w-2 h-2 rounded-full bg-neutral-700"></span>
+</div>
+</div>
+<!-- Phone Screen Content (Google Wallet Canvas) -->
+<div class="w-full rounded-[38px] bg-[#111315] text-white p-space-md flex flex-col min-h-[580px] shadow-inner relative overflow-hidden">
+<!-- Top System Header bar inside phone -->
+<div class="flex items-center justify-between text-xs text-neutral-400 mb-3 px-1">
+<span class="font-label-sm text-label-sm font-medium">9:41</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">wifi</span>
+<span class="material-symbols-outlined text-[14px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[14px]">battery_full</span>
+</div>
+</div>
+<!-- Google Wallet Sub-Header -->
+<div class="flex items-center justify-between mb-3 px-1">
+<div class="flex items-center gap-1 text-neutral-300">
+<span class="material-symbols-outlined text-[18px]">wallet</span>
+<span class="font-label-md text-label-md tracking-tight font-medium">Google Wallet</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-400">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</div>
+</div>
+<!-- THE ACTUAL WALLET PASS CARD -->
+<div class="w-full rounded-[24px] bg-gradient-to-br from-[#1c1d1a] to-[#0a0a09] p-space-md flex flex-col justify-between shadow-2xl relative overflow-hidden transition-all duration-300 border-t border-white/20" id="pass-card-element">
+<!-- Background Accent Glow in Card -->
+<div class="absolute -top-12 -left-12 w-44 h-44 rounded-full bg-secondary-fixed/20 blur-xl pointer-events-none"></div>
+<!-- Pass Top Row: Brand & Logo -->
+<div class="flex items-center justify-between relative z-10 mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow">
+<span class="material-symbols-outlined text-[18px]">cyclone</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold tracking-tight text-white block leading-none">AURA KINETIC</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed block">PERFORMANCE CLUB</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-white/10 text-neutral-300 font-label-sm text-label-sm">
+                    المعادي
+                  </span>
+</div>
+<!-- Pass Hero Artwork -->
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden relative mb-3 shadow-md">
+<img class="w-full h-full object-cover" data-alt="Dynamic fitness photography of athlete training in luxury dark gym with subtle green rim lighting, high-contrast, modern architectural gym backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAinHNH3pgdw2zCtkmM6jWOEzmfrWTMrM4vfTGoemxwBwGTZW5EBrmwrqR24zS4caPwU1MShR69RGj7odyp9gkikVw0fRS2I9qxLhBfi-rFcqy12opWArnAcjQt67ss95is8JRam23UvGPaSjxkvDlZSr0ZdZupR0VPvO-89HL2_8GHdzh6C1KPm3kDqXoF6OjbHSdbWzZXqFAwX69a_D0LoHO-QZxAEPQGahAN9jc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2">
+<span class="font-label-sm text-label-sm text-white/90">صالة التمارين الوظيفية والحديد</span>
+</div>
+</div>
+<!-- Member Name & Tier -->
+<div class="flex flex-col gap-0.5 relative z-10 mb-3">
+<span class="font-label-sm text-label-sm text-neutral-400">عضو مميز VIP</span>
+<span class="font-title-lg text-title-lg font-bold text-white tracking-tight">أحمد محمود إسماعيل</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold">الباقة الذهبية السنوية — VIP Gold</span>
+</div>
+</div>
+<!-- Secondary Dynamic Attributes -->
+<div class="grid grid-cols-2 gap-2 p-2.5 rounded-DEFAULT bg-black/40 backdrop-blur-md relative z-10 mb-3 border-t border-white/5">
+<div>
+<span class="font-label-sm text-label-sm text-neutral-400 block">صالح حتى:</span>
+<span class="font-label-md text-label-md font-semibold text-white">15 سبتمبر 2025</span>
+</div>
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-neutral-400 block">الزيارات المتبقية:</span>
+<span class="font-label-md text-label-md font-semibold text-secondary-fixed">28 زيارة</span>
+</div>
+</div>
+<!-- Barcode / Aztec Container with Security Watermark -->
+<div class="bg-white rounded-DEFAULT p-3 flex flex-col items-center justify-center gap-1.5 shadow-lg relative z-10">
+<div class="flex items-center justify-center w-full">
+<!-- Inline Simulated Aztec / QR Code Vector (under 2KB) -->
+<svg class="w-36 h-36 text-neutral-900" fill="currentColor" viewbox="0 0 140 140">
+<!-- Corner Markers -->
+<rect fill="currentColor" height="35" rx="4" width="35" x="10" y="10"></rect>
+<rect fill="white" height="25" rx="2" width="25" x="15" y="15"></rect>
+<rect fill="currentColor" height="15" rx="1" width="15" x="20" y="20"></rect>
+<rect fill="currentColor" height="35" rx="4" width="35" x="95" y="10"></rect>
+<rect fill="white" height="25" rx="2" width="25" x="100" y="15"></rect>
+<rect fill="currentColor" height="15" rx="1" width="15" x="105" y="20"></rect>
+<rect fill="currentColor" height="35" rx="4" width="35" x="10" y="95"></rect>
+<rect fill="white" height="25" rx="2" width="25" x="15" y="100"></rect>
+<rect fill="currentColor" height="15" rx="1" width="15" x="20" y="105"></rect>
+<!-- Aztec Center Matrix Core -->
+<rect fill="currentColor" height="36" rx="2" width="36" x="52" y="52"></rect>
+<rect fill="white" height="24" rx="1" width="24" x="58" y="58"></rect>
+<rect fill="currentColor" height="12" rx="1" width="12" x="64" y="64"></rect>
+<!-- Data Dots Grid -->
+<circle cx="55" cy="20" r="3"></circle>
+<circle cx="68" cy="20" r="3"></circle>
+<circle cx="78" cy="28" r="3"></circle>
+<circle cx="55" cy="38" r="3"></circle>
+<circle cx="20" cy="55" r="3"></circle>
+<circle cx="38" cy="65" r="3"></circle>
+<circle cx="25" cy="78" r="3"></circle>
+<circle cx="98" cy="58" r="3"></circle>
+<circle cx="118" cy="65" r="3"></circle>
+<circle cx="108" cy="78" r="3"></circle>
+<circle cx="55" cy="100" r="3"></circle>
+<circle cx="72" cy="112" r="3"></circle>
+<circle cx="85" cy="102" r="3"></circle>
+<circle cx="112" cy="115" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between w-full px-2 pt-1 border-t border-neutral-200">
+<span class="font-label-sm text-label-sm tracking-wider text-neutral-500">AUR-94028-EGY</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                      مشفر
+                    </span>
+</div>
+</div>
+<!-- Google Wallet Tap & Pay NFC Prompt Indicator -->
+<div class="flex items-center justify-center gap-1.5 mt-2.5 text-neutral-400">
+<span class="material-symbols-outlined text-[16px] animate-pulse">contactless</span>
+<span class="font-label-sm text-label-sm">قرّب الهاتف من قارئ البوابة NFC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Test Link -->
+<div class="w-full flex items-center justify-center mt-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">security</span>
+              يدعم التحقق الأمني التلقائي ومصادقة Google Pay SafetyNet
+            </span>
+</div>
+</div>
+<!-- Pass Live Deployment Statistics -->
+<div class="w-full rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl p-margin shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">analytics</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">إحصائيات النشر اللحظي</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">آخر 30 يوماً</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<!-- Stat 1 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/80 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">البطاقات المصدرة</span>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface mt-1">1,180</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+                +14.8%
+              </span>
+</div>
+<!-- Stat 2 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/80 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">تم الحفظ بالمحفظة</span>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface mt-1">94.2%</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                معدل قياسي
+              </span>
+</div>
+<!-- Stat 3 -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/80 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">سرعة الفحص بالبوابة</span>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface mt-1">0.28s</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                لحظي فائق
+              </span>
+</div>
+</div>
+<!-- Micro SVG Speed Telemetry Progress -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low/60 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-medium text-on-surface">استقرار شبكة المزامنة السحابية OTA</span>
+<span class="font-label-md text-label-md font-bold text-secondary">99.98%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 98.4%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Simulation -->
+<div class="fixed bottom-28 left-8 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notification">
+<div class="px-space-lg py-3 rounded-full bg-primary text-on-primary shadow-xl flex items-center gap-space-sm border-t border-white/10">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-text">تم إرسال عينة البطاقة الرقمية إلى الهاتف بنجاح!</span>
+</div>
+</div>
+</div>
+<script>
+  (function initWalletStudio() {
+    const themeButtons = document.querySelectorAll('.theme-preset-btn');
+    const themeLabel = document.getElementById('selected-theme-label');
+    const passCard = document.getElementById('pass-card-element');
+    const testBtn = document.getElementById('send-test-btn');
+    const saveBtn = document.getElementById('save-sync-btn');
+    const toast = document.getElementById('toast-notification');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(msg) {
+      if (!toast || !toastText) return;
+      toastText.textContent = msg;
+      toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    // Dynamic Theme Selector logic
+    const themes = {
+      lime: {
+        label: 'Aura Lime & Onyx (افتراضي)',
+        gradient: 'from-[#1c1d1a] to-[#0a0a09]',
+        highlight: 'text-secondary-fixed'
+      },
+      emerald: {
+        label: 'Deep Emerald & Forest',
+        gradient: 'from-[#0e2410] to-[#061207]',
+        highlight: 'text-secondary-fixed-dim'
+      },
+      pink: {
+        label: 'Kinetic Electric Pink',
+        gradient: 'from-[#2e091b] to-[#12030a]',
+        highlight: 'text-tertiary-fixed-dim'
+      },
+      onyx: {
+        label: 'Minimalist Platinum & Silver',
+        gradient: 'from-[#2a2a2c] to-[#121213]',
+        highlight: 'text-inverse-primary'
+      }
+    };
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        themeButtons.forEach(b => {
+          b.classList.remove('ring-2', 'ring-secondary');
+          const iconSpan = b.querySelector('.material-symbols-outlined');
+          if (iconSpan) iconSpan.remove();
+        });
+
+        btn.classList.add('ring-2', 'ring-secondary');
+        const circle = btn.querySelector('span');
+        if (circle) {
+          circle.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+        }
+
+        const themeKey = btn.getAttribute('data-theme');
+        const themeData = themes[themeKey] || themes.lime;
+
+        if (themeLabel) themeLabel.textContent = themeData.label;
+
+        if (passCard) {
+          passCard.className = passCard.className.replace(/from-\[#\w+\] to-\[#\w+\]/, themeData.gradient);
+        }
+
+        showToast('تم تحديث نسق الألوان ومعاينة البطاقة على الهاتف');
+      });
+    });
+
+    if (testBtn) {
+      testBtn.addEventListener('click', () => {
+        showToast('تم إرسال إشعار تجريبي عبر Google Wallet إلى جهاز الكابتن مصطفى');
+      });
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        showToast('تم نشر وحفظ القالب الجديد بنجاح على خوادم Google Cloud');
+      });
+    }
+  })();
+</script></main><aside class="fixed inset-x-0 bottom-0 z-40 bg-tertiary text-on-primary rounded-t-lg shadow-[0_-12px_36px_rgba(0,0,0,0.22)] transition-transform duration-300"><div class="w-full flex justify-center py-2 cursor-pointer"><div class="w-14 h-1 rounded-full bg-outline/40"></div></div><div class="w-full px-gutter pb-4 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-primary-container text-secondary-fixed-dim"><span class="material-symbols-outlined text-[16px]">bolt</span><span class="font-label-md text-label-md uppercase tracking-wider">Aura Live Feed</span></div><span class="font-body-sm text-body-sm text-inverse-on-surface/80 truncate">آخر فحص دخول: أحمد سليم (VIP Performance) · صالة الحديد العامة قبل دقيقتين</span></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-2 text-inverse-on-surface/70 font-label-md text-label-md pl-4 border-l border-on-surface-variant/30"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">group</span><span>إشغال النادي: 68%</span></div><div class="flex items-center gap-space-xs"><button class="px-space-md py-1.5 rounded-full bg-primary-container hover:bg-surface-tint/20 text-on-primary font-body-sm text-body-sm transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">qr_code_scanner</span><span>تسجيل دخول سريع</span></button><button class="px-space-md py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-title-md text-title-md font-semibold transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">add_circle</span><span>اشتراك جديد</span></button></div></div></div></aside></body></html>

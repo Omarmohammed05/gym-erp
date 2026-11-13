@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=Outfit:wght@200;300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'IBM Plex Sans Arabic','Plus Jakarta Sans',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#3f001c", "on-error-container": "#93000a", "surface-container-highest": "#e2e2e4", "inverse-on-surface": "#f0f0f2", "on-secondary": "#ffffff", "on-surface-variant": "#444748", "surface-dim": "#d9dadc", "error": "#ba1a1a", "inverse-primary": "#c9c6c5", "tertiary-fixed-dim": "#ffb1c7", "primary-container": "#1c1b1b", "secondary-fixed-dim": "#b4d33b", "secondary": "#536600", "on-primary-fixed": "#1c1b1b", "tertiary-fixed": "#ffd9e2", "on-secondary-fixed": "#171e00", "surface-tint": "#5f5e5e", "on-primary-fixed-variant": "#474646", "surface-container": "#eeeef0", "outline-variant": "#c4c7c7", "on-tertiary-container": "#e54886", "background": "#f9f9fb", "on-primary": "#ffffff", "surface": "#f9f9fb", "on-primary-container": "#858383", "error-container": "#ffdad6", "on-secondary-container": "#576a00", "outline": "#747878", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "on-surface": "#1a1c1d", "on-tertiary-fixed": "#3f001c", "surface-bright": "#f9f9fb", "secondary-container": "#cced53", "surface-variant": "#e2e2e4", "tertiary": "#000000", "on-background": "#1a1c1d", "primary": "#000000", "surface-container-high": "#e8e8ea", "on-secondary-fixed-variant": "#3e4c00", "surface-container-low": "#f3f3f5", "on-tertiary": "#ffffff", "primary-fixed-dim": "#c9c6c5", "on-tertiary-fixed-variant": "#8e0048", "secondary-fixed": "#cff056", "primary-fixed": "#e5e2e1", "inverse-surface": "#2f3132" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter": "1.5rem", "margin": "2rem", "space-xl": "3rem", "space-lg": "1.75rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "display-xl": [ "Outfit" ], "headline-md": [ "Outfit" ], "metric-stat": [ "Outfit" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg": [ "Outfit" ], "display-xl-mobile": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Outfit" ], "title-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "metric-stat": [ "64px", { "lineHeight": "68px", "letterSpacing": "-0.04em", "fontWeight": "200" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "display-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "300" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "title-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-secondary-fixed shadow-sm"><span class="material-symbols-outlined text-[20px]">cyclone</span></div><div><span class="font-title-lg text-title-lg tracking-tight font-bold text-on-surface block leading-none">AURA</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant block mt-0.5">KINETIC ERP</span></div></div><div class="h-6 w-[1px] bg-surface-container-highest hidden lg:block"></div><button class="hidden lg:flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-all duration-200"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-body-sm text-body-sm font-medium">فرع المعادي · Maadi</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button></div><nav class="hidden xl:flex items-center p-1.5 rounded-full bg-surface-container-low shadow-[inset_0_1px_2px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary text-on-primary shadow-sm"><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="dashboard" href="#">لوحة التحكم</a><a aria-current="page" class="px-space-md py-2 rounded-full font-body-sm transition-all duration-150 bg-primary text-on-primary shadow-sm" data-path="members" href="#">الأعضاء</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="pos-sales" href="#">نقطة البيع</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="classes-schedule" href="#">الحصص والجدول</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="insights-reports" href="#">الرؤى والتقارير</a><a class="px-space-md py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="launcher-more" href="#">المزيد</a></nav><div class="flex items-center gap-space-sm"><div class="relative hidden md:flex items-center"><div class="flex items-center gap-space-sm px-space-md h-10 w-72 rounded-full bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_rgba(83,102,0,0.25)]"><span class="material-symbols-outlined text-[18px]">search</span><input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm focus:outline-none" placeholder="⌘K بحث بالأعضاء والعمليات..." type="text"/><span class="px-1.5 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">⌘K</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md font-medium">الوردية الصباحية · كاش 12,400 ج.م</span></div><button class="relative w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><button class="px-3 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all">EN</button><div class="flex items-center gap-space-sm pl-1 pr-2 py-1 rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:block text-right"><span class="font-body-sm text-body-sm font-semibold text-on-surface block leading-tight">كابتن مصطفى</span><span class="font-label-sm text-label-sm text-on-surface-variant block">مدير الفرع</span></div></div></div></div></header><main class="w-full pt-20 pb-36 min-h-screen bg-surface px-gutter"><div class="flex flex-col w-full">
+<!-- Subtle Architectural Glass Background Ambient Accents -->
+<div class="relative w-full">
+<div class="absolute -top-12 right-1/4 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 left-10 w-80 h-80 rounded-full bg-tertiary-fixed-dim/20 blur-3xl pointer-events-none -z-10"></div>
+<!-- Top Command & Filter Deck -->
+<div class="flex flex-col gap-space-lg mb-space-lg">
+<!-- Breadcrumb & Micro-meta Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-1">
+<span>Aura Kinetic</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-semibold">إدارة العضويات</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface">السجل الحي</span>
+</div>
+<div class="flex flex-wrap items-baseline gap-space-md">
+<h1 class="font-headline-lg text-headline-lg font-light text-on-surface tracking-tight">الأعضاء والاشتراكات</h1>
+<span class="font-label-md text-label-md px-space-md py-1 rounded-full bg-surface-container-high text-on-surface font-medium shadow-sm">
+              1,284 عضو مسجل · 1,140 نشط
+            </span>
+</div>
+</div>
+<!-- Primary Action Suite -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Branch Selector Pill -->
+<div class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface shadow-sm cursor-pointer transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary">domain</span>
+<span class="font-body-sm text-body-sm font-medium">فرع المعادي</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">keyboard_arrow_down</span>
+</div>
+<!-- Secondary Actions -->
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">file_upload</span>
+<span class="font-body-sm text-body-sm font-medium">استيراد كشف</span>
+</button>
+<!-- Add Member Wizard Trigger -->
+<button class="flex items-center gap-space-sm px-6 py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary shadow-md hover:shadow-lg transition-all group" id="openNewMemberModal">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed group-hover:scale-110 transition-transform">person_add</span>
+<span class="font-title-md text-title-md font-semibold tracking-wide">+ إضافة عضو جديد</span>
+</button>
+</div>
+</div>
+<!-- Live Search & Filtering Cluster -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search Input with Egyptian Formatting Helper -->
+<div class="relative flex-1 min-w-[300px]">
+<div class="flex items-center gap-space-sm px-space-md h-12 rounded-full bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_rgba(83,102,0,0.3)] transition-all">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">search</span>
+<input class="w-full bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md focus:outline-none" id="memberSearchInput" placeholder="البحث بالاسم، كود العضوية (EG-XXXX)، أو الهاتف (010x)..." type="text"/>
+<button class="text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Segment Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-1 scrollbar-none">
+<button class="filter-chip px-space-md py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-sm flex items-center gap-1.5 transition-all" data-status="all">
+<span>الكل</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high/30 font-label-sm text-label-sm">1,284</span>
+</button>
+<button class="filter-chip px-space-md py-2 rounded-full font-label-md text-label-md font-medium bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" data-status="active">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>نشط</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">1,140</span>
+</button>
+<button class="filter-chip px-space-md py-2 rounded-full font-label-md text-label-md font-medium bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" data-status="expiring">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span>ينتهي قريباً</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">48</span>
+</button>
+<button class="filter-chip px-space-md py-2 rounded-full font-label-md text-label-md font-medium bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" data-status="due">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>غير مسدد</span>
+<span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">19</span>
+</button>
+<button class="filter-chip px-space-md py-2 rounded-full font-label-md text-label-md font-medium bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex items-center gap-1.5" data-status="frozen">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span>مجمد</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">24</span>
+</button>
+<button class="filter-chip px-space-md py-2 rounded-full font-label-md text-label-md font-medium bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-status="inactive">
+<span>غير نشط</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Workspace Grid: Table + Side Telemetry Dock -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Frosted Glass Members Register (Col 1-9) -->
+<div class="xl:col-span-9 bg-surface-container-lowest/85 backdrop-blur-2xl rounded-3xl shadow-[0_12px_40px_-10px_rgba(10,10,10,0.04)] overflow-hidden">
+<!-- Table Action Header / Micro Toolbar -->
+<div class="px-6 py-4 flex items-center justify-between bg-surface-container-low/40">
+<div class="flex items-center gap-3">
+<div class="relative flex items-center">
+<input class="w-5 h-5 rounded-md text-primary accent-primary cursor-pointer transition-all" id="selectAllCheckbox" type="checkbox"/>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">تحديد جماعي لجميع المسجلين</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span>عرض 1 - 7 من 1,284 متدرب</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center hover:bg-surface-container disabled:opacity-40 transition-all" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+<!-- The Responsive Data Surface -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3.5 px-4 w-12 text-center"></th>
+<th class="py-3.5 px-4">المتدرب</th>
+<th class="py-3.5 px-4">كود العضوية</th>
+<th class="py-3.5 px-4">رقم الهاتف</th>
+<th class="py-3.5 px-4">الباقة الحالية</th>
+<th class="py-3.5 px-4">حالة الاشتراك</th>
+<th class="py-3.5 px-4">تاريخ الانتهاء</th>
+<th class="py-3.5 px-4">الرصيد المستحق</th>
+<th class="py-3.5 px-4">آخر زيارة</th>
+<th class="py-3.5 px-4 text-center">إجراءات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-sm text-body-sm" id="memberRowsContainer">
+<!-- Row 1: أحمد محمود إسماعيل -->
+<tr class="member-row group hover:bg-surface-container-low/60 transition-colors" data-id="1" data-status="active">
+<td class="py-4 px-4 text-center">
+<input class="row-select w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Editorial portrait of a high-energy Egyptian male athlete, late 20s, wearing minimalist black technical sportswear, shot in a sleek boutique fitness studio in Cairo with soft neutral lighting and a gentle lime green rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBSpFmnmVg2bFA1Dx0CcgmFcz9h4UbL462O-7trlt9TMFi-evy2GJxk7CEHy-bmtdKs2V1xw7EuVFFOBSvVvbhEktM5OSgrnatJlpgCSMmQwvRtU_MdVrAhiqa_UNihLjLf1-UNkbBj2GbK_S_UxOQ2opbtg43biNveTkVNYU10K8FWp04DWrKgWCf5_oHxnUyYbyRQ8Kiaa73AqBHmY3XcXlcAPJOmIoHfieKVEI"/>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight group-hover:text-secondary transition-colors">أحمد محمود إسماعيل</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">انضم منذ عام ونصف</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-mono font-semibold">EG-8841</span>
+</td>
+<td class="py-4 px-4 font-mono dir-ltr text-right text-on-surface-variant">0102 384 9912</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-medium text-on-surface">باقة سنوية VIP</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                    نشط
+                  </span>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface">15 سبتمبر 2025</td>
+<td class="py-4 px-4">
+<span class="font-mono text-on-surface-variant font-medium">0.00 <span class="font-body-sm text-body-sm text-on-surface-variant/80">ج.م</span></span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-block text-secondary font-medium">اليوم 10:15 ص</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all" title="سجل التمارين">
+<span class="material-symbols-outlined text-[18px]">fitness_center</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all" title="المزيد">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: سارة كريم الحسيني -->
+<tr class="member-row group hover:bg-surface-container-low/60 transition-colors" data-id="2" data-status="expiring">
+<td class="py-4 px-4 text-center">
+<input class="row-select w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Editorial portrait of an Egyptian woman in her early 30s with confident posture, subtle athletic styling, natural soft makeup, gentle atmospheric daylight in a high-end wellness sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXYR2nr0k5fcq96jx3wh0fkf5lRxMZbPEB-KPqFVW3EoyEyT8cGzd6I5FRuJxof8CSLJ32Eh244N6sg6y-h-jRDMlqCFG0TgMSJrqJ7zGDOgW5rWDvQuX9eQa02gciCOYuOLH89yl-ITvhsqO6OfiS5NnUsTAgf36VDgY3Tg3uADSK2owi0_s5ReWQezfb9nPHrMFmBkzD8drBVA5XL5nQgTiVZ4yNxXZFqiAVbeg"/>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight group-hover:text-secondary transition-colors">سارة كريم الحسيني</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">التركيز: بيلاتس ويوجا</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-mono font-semibold">EG-4190</span>
+</td>
+<td class="py-4 px-4 font-mono dir-ltr text-right text-on-surface-variant">0114 552 1890</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-medium text-on-surface">باقة 6 أشهر</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/90 text-on-secondary-fixed font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">hourglass_top</span>
+                    ينتهي بعد 3 أيام
+                  </span>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface">24 أكتوبر 2024</td>
+<td class="py-4 px-4">
+<span class="font-mono text-on-surface-variant font-medium">0.00 <span class="font-body-sm text-body-sm text-on-surface-variant/80">ج.م</span></span>
+</td>
+<td class="py-4 px-4">
+<span class="text-on-surface-variant">أمس 06:40 م</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-secondary-container hover:bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">autorenew</span>
+                      تجديد
+                    </button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: طارق حسام الرفاعي -->
+<tr class="member-row group hover:bg-surface-container-low/60 transition-colors bg-error-container/10" data-id="3" data-status="due">
+<td class="py-4 px-4 text-center">
+<input class="row-select w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Editorial portrait of a 35-year-old Egyptian male executive athlete with short cropped hair and a calm expression, captured in crisp architectural studio lighting with soft concrete textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZVXg83-7OaTRdRfLpR47oFx8syUgdUXkEYYmCBe5SMIbSWeKJrhxktV0IXSqkoiFOxtu_ZDb7T_NCBkPTdFF0mEs1MY2GKHmYkq6ji0qNUcVGnG28ygkieDxARIUvtgOjMX25NVNlcGvwQp7N8SIC_VSULXAoe-A1f6lK-6hIy73pS4thJQxdQr8ealPwjejhH5XccRCRiZ3IlRrLzW6evsu7-88wsBlNUDWK-FI"/>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight group-hover:text-error transition-colors">طارق حسام الرفاعي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تخلف عن قسط التجديد</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-mono font-semibold">EG-9421</span>
+</td>
+<td class="py-4 px-4 font-mono dir-ltr text-right text-on-surface-variant">0101 229 4481</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-medium text-on-surface">باقة فصلية 3 أشهر</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                    غير مسدد
+                  </span>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface">18 أكتوبر 2024</td>
+<td class="py-4 px-4">
+<span class="font-mono text-error font-bold tracking-tight">500.00 <span class="font-body-sm text-body-sm">ج.م</span></span>
+</td>
+<td class="py-4 px-4">
+<span class="text-on-surface-variant">منذ يومين</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-error hover:bg-error/90 text-on-error font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">payments</span>
+                      سداد
+                    </button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: مريم سامي الشاذلي -->
+<tr class="member-row group hover:bg-surface-container-low/60 transition-colors" data-id="4" data-status="active">
+<td class="py-4 px-4 text-center">
+<input class="row-select w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Editorial portrait of a young Egyptian female athlete in her late 20s smiling gently, wearing clean olive green sports attire against a bright frosted architectural glass backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB13zUqzC_9MYv7CgF0C6wh2SDw08hcjCJxdWOLMArG6CkSPY4ICrI9mNYvekVALSLINX7NaEJq25fgY4u2auu2Sv73TiWsA64aprCxhkMffq-X7XO9uBQXsdQjFckN7BaLsMffFJdzDVZZwXOyS_Kc_P9C8Ty2tVbUazXqW4livY0bKwq6NwWBEQ-nMkeF57svffeFyYyW48SS27Ip1A-zWBQWzLOcuVmefIiq-L0"/>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight group-hover:text-secondary transition-colors">مريم سامي الشاذلي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">برنامج تدريب شخصي (PT)</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-mono font-semibold">EG-0048</span>
+</td>
+<td class="py-4 px-4 font-mono dir-ltr text-right text-on-surface-variant">0122 981 7734</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-medium text-on-surface">باقة سنة بلس</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    نشط
+                  </span>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface">04 يناير 2026</td>
+<td class="py-4 px-4">
+<span class="font-mono text-on-surface-variant font-medium">0.00 <span class="font-body-sm text-body-sm text-on-surface-variant/80">ج.م</span></span>
+</td>
+<td class="py-4 px-4">
+<span class="text-secondary font-medium">اليوم 09:30 ص</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: كريم عبد الرحمن -->
+<tr class="member-row group hover:bg-surface-container-low/60 transition-colors" data-id="5" data-status="frozen">
+<td class="py-4 px-4 text-center">
+<input class="row-select w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-title-md text-title-md font-bold">
+                      ك ع
+                    </div>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight">كريم عبد الرحمن</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">طلب تجميد (إجازة سفر)</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-mono font-semibold">EG-3319</span>
+</td>
+<td class="py-4 px-4 font-mono dir-ltr text-right text-on-surface-variant">0109 443 2210</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+<span class="font-medium text-on-surface">باقة شهرية</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[14px]">ac_unit</span>
+                    مجمد (متبقي 14 يوم)
+                  </span>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface">10 أكتوبر 2025</td>
+<td class="py-4 px-4">
+<span class="font-mono text-on-surface-variant font-medium">0.00 <span class="font-body-sm text-body-sm text-on-surface-variant/80">ج.م</span></span>
+</td>
+<td class="py-4 px-4">
+<span class="text-on-surface-variant">12 مايو 2024</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">play_arrow</span>
+                      إلغاء التجميد
+                    </button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: نور الدين الصاوي -->
+<tr class="member-row group hover:bg-surface-container-low/60 transition-colors" data-id="6" data-status="active">
+<td class="py-4 px-4 text-center">
+<input class="row-select w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Editorial close portrait of a handsome Middle Eastern male in his late 20s with light beard, athletic look, soft studio shadow, bright eyes, minimalist aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv_isaBolN5K49WIqUGYiJVK4ubbDHTSSWrEfgAkqklAZvl0iOaKH6TiIU7CRdU7lYo3YDnVnNJdGCb0mQpoByymy_JhZ1BJEhdB489xHZpvdmhtkm3XIGShAtcZ1VwphXqaKHU7uK4mLWIemVWFj5OBTS1knHSuke9BCMKXPLMS66hn1iQ-oNd1U4_Bs-ezZBOwa5BjEtGHqf34H8p4wHJMA0u8Q5YN_dEgVhtIg"/>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight group-hover:text-secondary transition-colors">نور الدين الصاوي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">كروس فيت &amp; أثقال</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-mono font-semibold">EG-7712</span>
+</td>
+<td class="py-4 px-4 font-mono dir-ltr text-right text-on-surface-variant">0112 009 3144</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-medium text-on-surface">باقة بلاتينيوم سنوية</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    نشط
+                  </span>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface">30 أغسطس 2025</td>
+<td class="py-4 px-4">
+<span class="font-mono text-on-surface-variant font-medium">0.00 <span class="font-body-sm text-body-sm text-on-surface-variant/80">ج.م</span></span>
+</td>
+<td class="py-4 px-4">
+<span class="text-on-surface-variant">اليوم 07:15 ص</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: فريدة محمود شكري -->
+<tr class="member-row group hover:bg-surface-container-low/60 transition-colors" data-id="7" data-status="active">
+<td class="py-4 px-4 text-center">
+<input class="row-select w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-title-md text-title-md font-bold">
+                      ف ش
+                    </div>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight group-hover:text-secondary transition-colors">فريدة محمود شكري</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">باقة ريكفري وسونا VIP</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-mono font-semibold">EG-5503</span>
+</td>
+<td class="py-4 px-4 font-mono dir-ltr text-right text-on-surface-variant">0155 771 9081</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-medium text-on-surface">باقة 6 أشهر بلس</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    نشط
+                  </span>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface">11 فبراير 2025</td>
+<td class="py-4 px-4">
+<span class="font-mono text-on-surface-variant font-medium">0.00 <span class="font-body-sm text-body-sm text-on-surface-variant/80">ج.م</span></span>
+</td>
+<td class="py-4 px-4">
+<span class="text-on-surface-variant">أمس 04:10 م</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Telemetry Bar -->
+<div class="px-6 py-4 bg-surface-container-low/50 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-4">
+<span>معدل النشاط الشهري للفرع: <strong class="text-on-surface font-semibold">88.8%</strong></span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>نسبة تجديد الاشتراكات: <strong class="text-secondary font-semibold">+14.2%</strong> مقارنة بالشهر السابق</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm">الصفوف لكل صفحة:</span>
+<select class="bg-surface-container rounded-full px-2 py-1 text-on-surface text-label-sm font-medium border-none focus:outline-none">
+<option>10</option>
+<option selected="">25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Quick Stats, Retention & Expiring Glow Vitrine (Col 10-12) -->
+<div class="xl:col-span-3 flex flex-col gap-space-lg">
+<!-- Vitrine 1: Retention Alert & Expiring Dock with Radial Glow -->
+<div class="relative overflow-hidden rounded-3xl p-6 bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_12px_40px_-10px_rgba(10,10,10,0.04)]">
+<div class="absolute -top-10 -right-10 w-44 h-44 rounded-full bg-secondary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-tertiary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-bold uppercase tracking-wider">
+                حرجة للغاية
+              </span>
+</div>
+<div>
+<span class="font-metric-stat text-headline-lg font-light text-on-surface tracking-tight block leading-none">23</span>
+<span class="font-title-lg text-title-lg font-semibold text-on-surface block mt-1">اشتراكاً ينتهي هذا الأسبوع</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                منهم 14 عضواً VIP يتمتعون بأعلى درجات الالتزام. إرسال تذكير مخصص يرفع نسبة التجديد التلقائي لـ 82%.
+              </p>
+</div>
+<!-- Visual Progress Arc Mini-Widget -->
+<div class="p-3.5 rounded-2xl bg-surface-container-low/80 flex items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<svg class="w-10 h-10 -rotate-90 transform" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">78% هدف الاستبقاء</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تم حسم 18 اشتراك</span>
+</div>
+</div>
+<span class="font-mono font-bold text-secondary text-title-md">78%</span>
+</div>
+<!-- Single Click WhatsApp Blast CTA -->
+<button class="w-full py-3 px-4 rounded-full bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-semibold shadow-md transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed group-hover:scale-110 transition-transform">send</span>
+<span>تذكير واتساب بنقرة واحدة</span>
+</button>
+</div>
+</div>
+<!-- Vitrine 2: Membership Distribution Breakdown -->
+<div class="p-6 rounded-3xl bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_12px_40px_-10px_rgba(10,10,10,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-semibold text-on-surface">توزيع الباقات النشطة</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">pie_chart</span>
+</div>
+<div class="space-y-3 font-body-sm text-body-sm">
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-on-surface font-medium">باقات سنوية (VIP &amp; Plus)</span>
+<span class="font-mono text-on-surface-variant font-semibold">58%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 58%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-on-surface font-medium">باقات 6 أشهر</span>
+<span class="font-mono text-on-surface-variant font-semibold">27%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-secondary-fixed-dim" style="width: 27%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-on-surface font-medium">باقات فصلية وشهرية</span>
+<span class="font-mono text-on-surface-variant font-semibold">15%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-surface-tint" style="width: 15%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>متوسط الإيراد لكل عضو:</span>
+<span class="font-mono font-bold text-on-surface">9,420 ج.م سنوياً</span>
+</div>
+</div>
+<!-- Vitrine 3: Direct Coach / InBody Telemetry Pulse -->
+<div class="p-6 rounded-3xl bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_12px_40px_-10px_rgba(10,10,10,0.04)] flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">monitor_heart</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block leading-tight">فحوصات InBody اليوم</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18 موعد محجوز بالعيادة الرياضية</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-md text-label-md text-secondary font-semibold">كابتن زياد &amp; د. نيفين</span>
+<button class="font-label-md text-label-md text-on-surface underline hover:text-secondary">جدول القياسات</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Floating Glass Bulk Action Bar (Reveals when items checked) -->
+<div class="fixed bottom-24 inset-x-0 mx-auto w-fit z-50 transition-all duration-300 transform translate-y-28 opacity-0 pointer-events-none" id="bulkActionBar">
+<div class="flex items-center gap-space-md px-6 py-3.5 rounded-full bg-primary/95 text-on-primary backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
+<div class="flex items-center gap-2 pl-4 border-l border-on-surface-variant/30">
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed font-mono text-label-sm font-bold flex items-center justify-center" id="selectedCountBadge">3</span>
+<span class="font-title-md text-title-md font-medium text-on-primary">أعضاء محددين</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-full bg-surface-container-high/20 hover:bg-surface-container-high/30 text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">chat</span>
+<span>إرسال رسالة واتساب جماعية</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high/20 hover:bg-surface-container-high/30 text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>تجديد جماعي</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high/20 hover:bg-surface-container-high/30 text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>تصدير كشف CSV</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high/20 text-on-primary flex items-center justify-center transition-all ml-1" id="clearSelectionBtn" title="إلغاء التحديد">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- New Member Creation Modal Drawer (Mocked for rich interaction) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden items-center justify-center p-4" id="newMemberModal">
+<div class="w-full max-w-xl rounded-3xl bg-surface-container-lowest p-8 shadow-2xl relative">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-high">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">إضافة متدرب جديد إلى النادي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تسجيل العضوية وإصدار بطاقة الدخول الذكية</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant" id="closeNewMemberModal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="py-6 space-y-4">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">الاسم الرباعي للمشترك</label>
+<input class="w-full px-4 h-12 rounded-full bg-surface-container-low focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 text-on-surface font-body-md text-body-md border-none focus:outline-none" placeholder="مثال: يوسف حسام الدين خليل" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">رقم الهاتف المصري</label>
+<input class="w-full px-4 h-12 rounded-full bg-surface-container-low text-on-surface font-mono text-body-md border-none focus:outline-none" placeholder="010xxxxxxxx" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">نوع الباقة</label>
+<select class="w-full px-4 h-12 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md border-none focus:outline-none">
+<option>باقة سنوية VIP</option>
+<option>باقة سنة بلس</option>
+<option>باقة 6 أشهر</option>
+<option>باقة فصلية 3 أشهر</option>
+</select>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-secondary-container/30 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface">إصدار بطاقة RFID وكود QR تلقائياً للتطبيق</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary">مفعل</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 pt-4 border-t border-surface-container-high">
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low hover:bg-surface-container font-title-md text-title-md text-on-surface transition-all" id="cancelModalBtn">إلغاء</button>
+<button class="px-8 py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-semibold shadow-md transition-all" id="confirmMemberBtn">حفظ وإتمام التسجيل</button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic Hook -->
+<script>
+    (function () {
+      // 1. Checkbox and Floating Bulk Bar Handling
+      const selectAll = document.getElementById('selectAllCheckbox');
+      const rowCheckboxes = document.querySelectorAll('.row-select');
+      const bulkBar = document.getElementById('bulkActionBar');
+      const selectedCountBadge = document.getElementById('selectedCountBadge');
+      const clearBtn = document.getElementById('clearSelectionBtn');
+
+      function updateBulkBar() {
+        const checkedBoxes = document.querySelectorAll('.row-select:checked');
+        const count = checkedBoxes.length;
+
+        if (count > 0) {
+          selectedCountBadge.textContent = count;
+          bulkBar.classList.remove('translate-y-28', 'opacity-0', 'pointer-events-none');
+          bulkBar.classList.add('translate-y-0', 'opacity-100');
+        } else {
+          bulkBar.classList.add('translate-y-28', 'opacity-0', 'pointer-events-none');
+          bulkBar.classList.remove('translate-y-0', 'opacity-100');
+          if (selectAll) selectAll.checked = false;
+        }
+      }
+
+      if (selectAll) {
+        selectAll.addEventListener('change', function () {
+          rowCheckboxes.forEach(cb => {
+            cb.checked = selectAll.checked;
+          });
+          updateBulkBar();
+        });
+      }
+
+      rowCheckboxes.forEach(cb => {
+        cb.addEventListener('change', function () {
+          updateBulkBar();
+          if (selectAll && !this.checked) {
+            selectAll.checked = false;
+          }
+        });
+      });
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', function () {
+          rowCheckboxes.forEach(cb => (cb.checked = false));
+          if (selectAll) selectAll.checked = false;
+          updateBulkBar();
+        });
+      }
+
+      // Pre-select 3 items to show the state specified in requirement
+      if (rowCheckboxes.length >= 3) {
+        rowCheckboxes[0].checked = true;
+        rowCheckboxes[1].checked = true;
+        rowCheckboxes[2].checked = true;
+        updateBulkBar();
+      }
+
+      // 2. Client-side Filter Chips
+      const filterChips = document.querySelectorAll('.filter-chip');
+      const memberRows = document.querySelectorAll('.member-row');
+
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', function () {
+          // Toggle styling
+          filterChips.forEach(c => {
+            c.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+            c.classList.add('bg-surface-container-low', 'text-on-surface', 'font-medium');
+          });
+          this.classList.remove('bg-surface-container-low', 'text-on-surface');
+          this.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+
+          const status = this.getAttribute('data-status');
+          memberRows.forEach(row => {
+            if (status === 'all' || row.getAttribute('data-status') === status) {
+              row.style.display = '';
+            } else {
+              row.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Member Search Filter
+      const searchInput = document.getElementById('memberSearchInput');
+      if (searchInput) {
+        searchInput.addEventListener('input', function (e) {
+          const query = e.target.value.toLowerCase().trim();
+          memberRows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            if (text.includes(query)) {
+              row.style.display = '';
+            } else {
+              row.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // 4. Modal Controls
+      const openModalBtn = document.getElementById('openNewMemberModal');
+      const closeModalBtn = document.getElementById('closeNewMemberModal');
+      const cancelModalBtn = document.getElementById('cancelModalBtn');
+      const confirmMemberBtn = document.getElementById('confirmMemberBtn');
+      const modal = document.getElementById('newMemberModal');
+
+      function showModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+
+      function hideModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+
+      if (openModalBtn) openModalBtn.addEventListener('click', showModal);
+      if (closeModalBtn) closeModalBtn.addEventListener('click', hideModal);
+      if (cancelModalBtn) cancelModalBtn.addEventListener('click', hideModal);
+      if (confirmMemberBtn) confirmMemberBtn.addEventListener('click', hideModal);
+    })();
+  </script>
+</div></main><aside class="fixed inset-x-0 bottom-0 z-40 bg-tertiary text-on-primary rounded-t-lg shadow-[0_-12px_36px_rgba(0,0,0,0.22)] transition-transform duration-300"><div class="w-full flex justify-center py-2 cursor-pointer"><div class="w-14 h-1 rounded-full bg-outline/40"></div></div><div class="w-full px-gutter pb-4 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-primary-container text-secondary-fixed-dim"><span class="material-symbols-outlined text-[16px]">bolt</span><span class="font-label-md text-label-md uppercase tracking-wider">Aura Live Feed</span></div><span class="font-body-sm text-body-sm text-inverse-on-surface/80 truncate">آخر فحص دخول: أحمد سليم (VIP Performance) · صالة الحديد العامة قبل دقيقتين</span></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-2 text-inverse-on-surface/70 font-label-md text-label-md pl-4 border-l border-on-surface-variant/30"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">group</span><span>إشغال النادي: 68%</span></div><div class="flex items-center gap-space-xs"><button class="px-space-md py-1.5 rounded-full bg-primary-container hover:bg-surface-tint/20 text-on-primary font-body-sm text-body-sm transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">qr_code_scanner</span><span>تسجيل دخول سريع</span></button><button class="px-space-md py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-title-md text-title-md font-semibold transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">add_circle</span><span>اشتراك جديد</span></button></div></div></div></aside></body></html>
